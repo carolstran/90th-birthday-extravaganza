@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Box, Heading } from "@chakra-ui/core";
 import birthdayMessages from "./data/birthdayMessages";
 import MessageContainer from "./components/MessageContainer";
 import confetti from "canvas-confetti";
@@ -27,10 +28,13 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div as="header">
-        <h1>Happy 90th Birthday!</h1>
-      </div>
+    <Box className="App">
+      <Box as="header">
+        <Heading as="h1" size="xl" textAlign="center" mt={20} mb={10}>
+          Birthday Wishes From Around the Globe <br />
+          🌎🎈🍰🎊🍾🌍
+        </Heading>
+      </Box>
       <MessageContainer
         messageCount={state.messageCount}
         message={state.message}
@@ -42,7 +46,7 @@ const App = () => {
         }
         onNextClick={showNextMessage}
       />
-    </div>
+    </Box>
   );
 };
 
