@@ -1,5 +1,17 @@
 const birthdayMessages = [
   {
+    message:
+      "Happy, happy birthday Joe! I hope you have a wonderful birthday and year-no one deserves it more!  Thank you for welcoming us into your family, your AZ home, for being a grandpa to christian and Jackson, and for taking such good care of us over the years!  Love, Kymra & The Knuth's",
+    name: "Kymra Knuth",
+    email: "kknuth@hoffman.com"
+  },
+  {
+    message:
+      "Happy Birthday to my dad - not everyone is lucky enough to have a dad who would: \n\n 1) Drive over 75 miles roundtrip in the winter to buy a Burger King Whopper on my 10th birthday. \n\n 2) Spend so much time with me at the horse barn when I got my horse when I turned 12 years old. \n\n 3) Attend my very first Nascar race this year when I am 62 - which included infield tickets so I could see the cars and drivers up close. \n\n Can't wait to see what adventures come up in the future! But I don't think we'll be spending my birthdays at Burger King - I have better taste in 2020!! Love you.",
+    name: "Jill",
+    email: "tjstransky@gmail.com"
+  },
+  {
     message: "Happy birthday to the best grandpa a girl could ask for!",
     name: "Beth",
     email: "wakandadr@gmail.com"
