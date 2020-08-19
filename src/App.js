@@ -41,7 +41,7 @@ const App = () => {
   return (
     <Box className="App">
       <Box as="header">
-        <Heading as="h1" size="xl" textAlign="center" mt={20} mb={10}>
+        <Heading as="h1" size="xl" textAlign="center" mt={12} mb={12}>
           Birthday Wishes From Around the Globe <br />
           <span role="img" aria-label="Celebration emojis">
             🌎 🎈 🍰 ❤️ 🍾 🌍
