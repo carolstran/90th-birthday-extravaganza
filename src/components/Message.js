@@ -17,7 +17,10 @@ const Message = props => (
       - {props.name}
     </Heading>
     <Text textAlign="center" mb={18}>
-      💌 Email {props.name}:{" "}
+      <span role="img" aria-label="">
+        💌
+      </span>{" "}
+      Email {props.name}:{" "}
       <Link
         href={`mailto:${props.email}?subject=Thanks for the birthday wishes!`}
       >
