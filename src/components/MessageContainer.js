@@ -27,7 +27,7 @@ const MessageContainer = props => {
           email={props.email}
         />
       </Box>
-      <Flex as="main" justify="center" mt={12}>
+      <Flex as="main" justify="center" mt={12} mb={20}>
         {props.lastMessage ? (
           <Button
             variantColor="red"
@@ -37,9 +37,27 @@ const MessageContainer = props => {
             Read them again
           </Button>
         ) : (
-          <Button variantColor="red" as="a" onClick={props.onNextClick}>
-            Next
-          </Button>
+          <>
+            {props.messageCount === 0 ? null : (
+              <Button
+                variantColor="red"
+                variant="outline"
+                as="a"
+                onClick={props.onPreviousClick}
+                mr={2}
+              >
+                Previous
+              </Button>
+            )}
+            <Button
+              variantColor="red"
+              as="a"
+              onClick={props.onNextClick}
+              ml={2}
+            >
+              Next Message
+            </Button>
+          </>
         )}
       </Flex>
     </>

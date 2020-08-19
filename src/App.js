@@ -27,6 +27,17 @@ const App = () => {
     confetti();
   };
 
+  const showPreviousMessage = () => {
+    const counter = state.messageCount - 1;
+
+    setState({
+      messageCount: counter,
+      message: birthdayMessages[counter].message,
+      name: birthdayMessages[counter].name,
+      email: birthdayMessages[counter].email
+    });
+  };
+
   return (
     <Box className="App">
       <Box as="header">
@@ -47,6 +58,7 @@ const App = () => {
           state.messageCount + 1 === birthdayMessages.length ? true : false
         }
         onNextClick={showNextMessage}
+        onPreviousClick={showPreviousMessage}
       />
     </Box>
   );
