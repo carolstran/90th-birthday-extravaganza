@@ -12,7 +12,7 @@ const MessageContainer = props => {
         mx="auto"
         maxW={800}
         position="relative"
-        px={8}
+        px={16}
         py={8}
       >
         <Flex justify="center">

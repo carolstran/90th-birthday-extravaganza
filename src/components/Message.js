@@ -9,14 +9,15 @@ const Message = props => {
       <Heading
         as="h2"
         size="lg"
-        fontWeight={500}
+        fontWeight={400}
         textAlign="center"
         mt={2}
         mb={6}
+        lineHeight={1.5}
       >
         {props.message}
       </Heading>
-      <Heading as="h3" size="md" fontWeight={500} textAlign="center" mb={12}>
+      <Heading as="h3" size="md" fontWeight={700} textAlign="center" mb={12}>
         - {props.name}
       </Heading>
       <Text textAlign="center" mb={18}>
