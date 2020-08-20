@@ -1,7 +1,7 @@
 const birthdayMessages = [
   {
     message:
-      "Hello Joe, on reaching this milestone. \n\n I see you are moving up to the 90 space in a few days. Congratulations on reaching this milestone. \n\n We all look forward to being with you in Surprise to raise a glass to the number 90. \n\n Good luck on your birthday, and, stay healthy.",
+      "Hello Joe, \n\n I see you are moving up to the 90 space in a few days. Congratulations on reaching this milestone. \n\n We all look forward to being with you in Surprise to raise a glass to the number 90. \n\n Good luck on your birthday, and, stay healthy.",
     name: "Bruce Samson",
     email: "brucesamson@hotmail.com"
   },
