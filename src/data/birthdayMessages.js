@@ -1,6 +1,42 @@
 const birthdayMessages = [
   {
     message:
+      "Hello Joe, on reaching this milestone. \n\n I see you are moving up to the 90 space in a few days. Congratulations on reaching this milestone. \n\n We all look forward to being with you in Surprise to raise a glass to the number 90. \n\n Good luck on your birthday, and, stay healthy.",
+    name: "Bruce Samson",
+    email: "brucesamson@hotmail.com"
+  },
+  {
+    message:
+      "Happy Birthday Joe! Just because you are 90 doesn't mean we are going feel sorry for you and just let you win. So you better keep in shape for all the family fun that is coming in the future. Plus you might be winning in our Nascar pool but the season is only half over!",
+    name: "Tim Stransky",
+    email: "tjstransky@charter.net"
+  },
+  {
+    message:
+      "I am Tim Stransky’s cousin, I went to visit Tim and Jill at yout residence in Vancouver this last Winter. Had the honor to see you and your wife. Hope you have a great day in celebrating your Birthday with family and friends! Enjoy your Special Day!!!!!",
+    name: "Pamela Henry",
+    email: "pippygrrr@hotmail.com"
+  },
+  {
+    message:
+      "Hugs \n\n Kisses \n\n and Lovely \n\n ❤️ 90th ❤️Birthday Wishes to Grandpa Joe 🥰🎂🌹 \n\n Eric, Rose, Rabby , Aaron",
+    name: "Sung Family",
+    email: "rose4420@gmail.com"
+  },
+  {
+    message:
+      "Big Guy, \n\n I think it was 40 years ago when you hit your 2 iron farther than I hit my driver at Tumwater Valley. We had some great times on the golf course and on the back deck having beer and brats. We all hope you enjoy your BIG DAY and keep on going strong. However you still owe me a chain for my saw that you borrowed to cut open the side of your house to move the window and the sliding door.And we still talk about the toilet in the closet for your Mom. \n\n Love you Man, Happy Birthday from all the McDonalds",
+    name: "Mike, Jeanne, Molly, Meghan, Brady and Conor McDonald",
+    email: "mtmcdonal@aol.com"
+  },
+  {
+    message:
+      "Happy Birthday Grandpa Joe! \n\n Thanks for being a good friend and a great example for myself, Josh, and Anna. \n\n Hope things clear up so we can all get together in AZ in the spring like usual. \n\n Hope you have a wonderful day.",
+    name: "Jeff Mansur",
+    email: "jeff.mansur@me.com"
+  },
+  {
+    message:
       "Happy, happy birthday Joe! I hope you have a wonderful birthday and year-no one deserves it more!  Thank you for welcoming us into your family, your AZ home, for being a grandpa to christian and Jackson, and for taking such good care of us over the years!  Love, Kymra & The Knuth's",
     name: "Kymra Knuth",
     email: "kknuth@hoffman.com"
