@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import Message from "./Message";
 import MessageCount from "./MessageCount";
 import { Box, Flex, Button } from "@chakra-ui/core";
+import { WishesContext } from "../context/WishesContext";
 
-const MessageContainer = props => {
+const MessageContainer = () => {
+  const {
+    birthdayWish: { messageCount },
+    showPreviousMessage,
+    showNextMessage,
+    lastMessage
+  } = useContext(WishesContext);
+
   return (
     <>
       <Box
@@ -16,19 +24,12 @@ const MessageContainer = props => {
         py={8}
       >
         <Flex justify="center">
-          <MessageCount
-            counter={props.messageCount}
-            total={props.messageTotal}
-          />
+          <MessageCount />
         </Flex>
-        <Message
-          message={props.message}
-          name={props.name}
-          email={props.email}
-        />
+        <Message />
       </Box>
       <Flex as="main" justify="center" mt={12} mb={20}>
-        {props.lastMessage ? (
+        {lastMessage ? (
           <Button
             variantColor="red"
             variant="outline"
@@ -38,23 +39,18 @@ const MessageContainer = props => {
           </Button>
         ) : (
           <>
-            {props.messageCount === 0 ? null : (
+            {messageCount === 0 ? null : (
               <Button
                 variantColor="red"
                 variant="outline"
                 as="a"
-                onClick={props.onPreviousClick}
+                onClick={showPreviousMessage}
                 mr={2}
               >
                 Previous
               </Button>
             )}
-            <Button
-              variantColor="red"
-              as="a"
-              onClick={props.onNextClick}
-              ml={2}
-            >
+            <Button variantColor="red" as="a" onClick={showNextMessage} ml={2}>
               Next Message
             </Button>
           </>

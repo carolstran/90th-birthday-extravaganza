@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Heading, Link, Text } from "@chakra-ui/core";
+import { WishesContext } from "../context/WishesContext";
 
-const Message = props => {
-  const splitName = props.name.split(" ");
+const Message = () => {
+  const {
+    birthdayWish: { message, name, email }
+  } = useContext(WishesContext);
+  const splitName = name.split(" ");
 
   return (
     <>
@@ -15,20 +19,18 @@ const Message = props => {
         mb={6}
         lineHeight={1.5}
       >
-        {props.message}
+        {message}
       </Heading>
       <Heading as="h3" size="md" fontWeight={700} textAlign="center" mb={12}>
-        - {props.name}
+        - {name}
       </Heading>
       <Text textAlign="center" mb={18}>
         <span role="img" aria-label="">
           💌
         </span>{" "}
         Email {splitName[0]}:{" "}
-        <Link
-          href={`mailto:${props.email}?subject=Thanks for the birthday wishes!`}
-        >
-          {props.email}
+        <Link href={`mailto:${email}?subject=Thanks for the birthday wishes!`}>
+          {email}
         </Link>
       </Text>
     </>
