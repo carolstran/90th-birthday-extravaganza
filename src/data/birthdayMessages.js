@@ -1,6 +1,18 @@
 const birthdayMessages = [
   {
     message:
+      "Happy birthday Joe I hope to see you guys next time your in Phoenix :)",
+    name: "Christian Knuth",
+    email: "christianknuth99@gmail.com"
+  },
+  {
+    message:
+      "We are wishing you the happiest of birthdays “Grandpa Joe”! \n\n We certainly were blessed to have such fun years with you and Carol during Jake and Josh’s Camas Little League days.  Those were some of the best years we’ve had visiting you in Arizona for spring training and getting to watch all those baseball games and tournaments.  (Not to mention watching umpire Joe in action too).  Thanks for all the fun and laughs over the years. We have great memories. \n\n Sending love and happy 90th birthday wishes for another great year Joe! God bless! 💕 \n\n Love, JoLynn & the rest of the Mansur’s",
+    name: "JoLynn Mansur",
+    email: "jjmansur@comcast.net"
+  },
+  {
+    message:
       "Hello Joe, \n\n I see you are moving up to the 90 space in a few days. Congratulations on reaching this milestone. \n\n We all look forward to being with you in Surprise to raise a glass to the number 90. \n\n Good luck on your birthday, and, stay healthy.",
     name: "Bruce Samson",
     email: "brucesamson@hotmail.com"
