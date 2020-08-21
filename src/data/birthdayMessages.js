@@ -77,7 +77,7 @@ const birthdayMessages = [
   },
   {
     message:
-      "Hey Joe - Who is that devilishly good looking guy in the high school graduation picture?  Someone must have photoshopped that for you! :)  Lots of great memories of Friday night lights with the Owatonna 'Indians', baseball at Dartts Park and Apache camping trailers.  I could always hear Joe cheering above the crowd at Indian football, basketball and baseball games.  Thanks for all the great memories !!!   Hope you have a special  90th  with your family and a lot of Zoom friends.  You still have a graceful golf swing so I know you must be scoring less than 90 on the links. \n\n Happy Birthday, Craig. \n\n P.S.Could you give Bruce a few golf lessons to get him ready for the next Stimson Cup? :)",
+      "Hey Joe - Who is that devilishly good looking guy in the high school graduation picture?  Someone must have photoshopped that for you! :)  Lots of great memories of Friday night lights with the Owatonna 'Indians', baseball at Dartts Park and Apache camping trailers.  I could always hear Joe cheering above the crowd at Indian football, basketball and baseball games.  Thanks for all the great memories !!!   Hope you have a special  90th  with your family and a lot of Zoom friends.  You still have a graceful golf swing so I know you must be scoring less than 90 on the links. \n\n Happy Birthday. \n\n P.S.Could you give Bruce a few golf lessons to get him ready for the next Stimson Cup? :)",
     name: "Craig Kinney",
     email: "kinneycem@hotmail.com"
   },

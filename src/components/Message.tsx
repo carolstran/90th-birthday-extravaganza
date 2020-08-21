@@ -5,7 +5,7 @@ import { WishesContext } from "../context/WishesContext";
 const Message = () => {
   const {
     birthdayWish: { message, name, email }
-  } = useContext(WishesContext);
+  }: any = useContext(WishesContext); // TODO
   const splitName = name.split(" ");
 
   return (

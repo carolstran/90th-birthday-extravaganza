@@ -5,7 +5,7 @@ import { Badge } from "@chakra-ui/core";
 const MessageCount = () => {
   const {
     birthdayWish: { messageCount, numberOfMessages }
-  } = useContext(WishesContext);
+  }: any = useContext(WishesContext); // TODO
 
   return (
     <Badge
