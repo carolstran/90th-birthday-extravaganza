@@ -1,16 +1,9 @@
 import React, { useState, createContext } from "react";
 import confetti from "canvas-confetti";
 import birthdayMessages from "../data/birthdayMessages";
-import { BirthdayWish } from "../types";
+import { CurrentWish, StoreType } from "../types";
 
-// type StoreProps = {
-//   birthdayWish: BirthdayWish;
-//   showPreviousMessage: () => void;
-//   showNextMessage: () => void;
-//   lastMessage: boolean;
-// };
-
-let initialState: BirthdayWish = {
+let initialState: CurrentWish = {
   message: birthdayMessages[0].message,
   name: birthdayMessages[0].name,
   email: birthdayMessages[0].email,
@@ -18,44 +11,48 @@ let initialState: BirthdayWish = {
   numberOfMessages: birthdayMessages.length
 };
 
-export const WishesContext = createContext<BirthdayWish>(initialState);
+export const WishesContext = createContext<StoreType>({
+  currentWish: initialState,
+  showNextMessage: () => {},
+  showPreviousMessage: () => {},
+  lastMessage: false
+});
 
-const WishesContextProvider = ({ children }: any) => {
-  const [birthdayWish, setBirthdayWish] = useState(initialState);
+const WishesContextProvider = ({ children }: { children: React.ReactNode }) => {
+  const [currentWish, setCurrentWish] = useState<CurrentWish>(initialState);
 
-  const showNextMessage: () => void = () => {
-    const counter = birthdayWish.messageCount + 1;
+  const showNextMessage: StoreType["showNextMessage"] = () => {
+    const counter = currentWish.messageCount + 1;
 
-    setBirthdayWish({
-      ...birthdayWish,
+    setCurrentWish(currentWish => ({
+      ...currentWish,
       messageCount: counter,
       message: birthdayMessages[counter].message,
       name: birthdayMessages[counter].name,
       email: birthdayMessages[counter].email
-    });
+    }));
 
     confetti();
   };
 
-  const showPreviousMessage: () => void = () => {
-    const counter = birthdayWish.messageCount - 1;
+  const showPreviousMessage: StoreType["showPreviousMessage"] = () => {
+    const counter = currentWish.messageCount - 1;
 
-    setBirthdayWish({
-      ...birthdayWish,
+    setCurrentWish(currentWish => ({
+      ...currentWish,
       messageCount: counter,
       message: birthdayMessages[counter].message,
       name: birthdayMessages[counter].name,
       email: birthdayMessages[counter].email
-    });
+    }));
   };
 
-  // TODO
-  const store: any = {
-    birthdayWish,
+  const store: StoreType = {
+    currentWish,
     showPreviousMessage,
     showNextMessage,
     lastMessage:
-      birthdayWish.messageCount + 1 === birthdayMessages.length ? true : false
+      currentWish.messageCount + 1 === birthdayMessages.length ? true : false
   };
 
   return (

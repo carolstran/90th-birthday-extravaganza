@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { Heading, Link, Text } from "@chakra-ui/core";
 import { WishesContext } from "../context/WishesContext";
+import { StoreType } from "../types";
 
 const Message = () => {
   const {
-    birthdayWish: { message, name, email }
-  }: any = useContext(WishesContext); // TODO
+    currentWish: { message, name, email }
+  }: StoreType = useContext(WishesContext);
   const splitName = name.split(" ");
 
   return (

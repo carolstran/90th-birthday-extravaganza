@@ -4,14 +4,15 @@ import MessageCount from "./MessageCount";
 import Button from "./Button";
 import { Box, Flex } from "@chakra-ui/core";
 import { WishesContext } from "../context/WishesContext";
+import { StoreType } from "../types";
 
 const MessageContainer = () => {
   const {
-    birthdayWish: { messageCount },
+    currentWish: { messageCount },
     showPreviousMessage,
     showNextMessage,
     lastMessage
-  }: any = useContext(WishesContext); // TODO
+  }: StoreType = useContext(WishesContext);
 
   return (
     <>
@@ -32,27 +33,26 @@ const MessageContainer = () => {
       <Flex as="main" justify="center" mt={12} mb={20}>
         {lastMessage ? (
           <Button
-            children="Read them again"
+            element="button"
             variant="outline"
             onClick={() => window.location.reload(false)}
-          />
+          >
+            Read them again
+          </Button>
         ) : (
           <>
             {messageCount === 0 ? null : (
               <Button
-                children="Previous"
                 variant="outline"
-                element="a"
                 onClick={showPreviousMessage}
                 marginRight={2}
-              />
+              >
+                Previous
+              </Button>
             )}
-            <Button
-              children="Next Message"
-              element="a"
-              onClick={showNextMessage}
-              marginLeft={2}
-            />
+            <Button onClick={showNextMessage} marginLeft={2}>
+              Next
+            </Button>
           </>
         )}
       </Flex>

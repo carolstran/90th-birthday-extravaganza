@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { WishesContext } from "../context/WishesContext";
 import { Badge } from "@chakra-ui/core";
+import { StoreType } from "../types";
 
 const MessageCount = () => {
   const {
-    birthdayWish: { messageCount, numberOfMessages }
-  }: any = useContext(WishesContext); // TODO
+    currentWish: { messageCount, numberOfMessages }
+  }: StoreType = useContext(WishesContext);
 
   return (
     <Badge
