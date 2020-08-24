@@ -19,9 +19,9 @@ const MessageContainer = () => {
         bg="gray.50"
         borderRadius="6px"
         mx="auto"
-        maxW={800}
+        maxW="80%"
         position="relative"
-        px={16}
+        px={12}
         py={8}
       >
         <Flex justify="center">
