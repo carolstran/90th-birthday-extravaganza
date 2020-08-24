@@ -1,33 +1,26 @@
 import React, { useState, createContext } from "react";
 import confetti from "canvas-confetti";
 import birthdayMessages from "../data/birthdayMessages";
+import { BirthdayWish } from "../types";
 
-type WishesContextState = {
-  message: string;
-  name: string;
-  email: string;
-  messageCount: number;
-  numberOfMessages: number;
+// type StoreProps = {
+//   birthdayWish: BirthdayWish;
+//   showPreviousMessage: () => void;
+//   showNextMessage: () => void;
+//   lastMessage: boolean;
+// };
+
+let initialState: BirthdayWish = {
+  message: birthdayMessages[0].message,
+  name: birthdayMessages[0].name,
+  email: birthdayMessages[0].email,
+  messageCount: 0,
+  numberOfMessages: birthdayMessages.length
 };
 
-type StoreProps = {
-  birthdayWish: WishesContextState;
-  showPreviousMessage: () => void;
-  showNextMessage: () => void;
-  lastMessage: boolean;
-};
-
-export const WishesContext = createContext<WishesContextState | null>(null);
+export const WishesContext = createContext<BirthdayWish>(initialState);
 
 const WishesContextProvider = ({ children }: any) => {
-  let initialState: WishesContextState = {
-    message: birthdayMessages[0].message,
-    name: birthdayMessages[0].name,
-    email: birthdayMessages[0].email,
-    messageCount: 0,
-    numberOfMessages: birthdayMessages.length
-  };
-
   const [birthdayWish, setBirthdayWish] = useState(initialState);
 
   const showNextMessage: () => void = () => {
