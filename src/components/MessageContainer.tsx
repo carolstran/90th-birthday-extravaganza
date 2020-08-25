@@ -15,7 +15,7 @@ const MessageContainer = () => {
   }: StoreType = useContext(WishesContext);
 
   return (
-    <>
+    <Box as="main">
       <Box
         bg="gray.50"
         borderRadius="6px"
@@ -30,7 +30,7 @@ const MessageContainer = () => {
         </Flex>
         <Message />
       </Box>
-      <Flex as="main" justify="center" mt={12} mb={20}>
+      <Flex justify="center" mt={12} mb={20}>
         {lastMessage ? (
           <Button
             element="button"
@@ -56,7 +56,7 @@ const MessageContainer = () => {
           </>
         )}
       </Flex>
-    </>
+    </Box>
   );
 };
 
