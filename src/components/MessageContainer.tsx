@@ -8,14 +8,14 @@ import { StoreType } from "../types";
 
 const MessageContainer = () => {
   const {
-    currentWish: { messageCount },
+    currentWish: { messageCount, numberOfMessages },
     showPreviousMessage,
     showNextMessage,
     lastMessage
   }: StoreType = useContext(WishesContext);
 
   return (
-    <Box as="main">
+    <main>
       <Box
         bg="gray.50"
         borderRadius="6px"
@@ -33,9 +33,10 @@ const MessageContainer = () => {
       <Flex justify="center" mt={12} mb={20}>
         {lastMessage ? (
           <Button
+            ariaLabel="Reload the page to read the messages again."
             element="button"
             variant="outline"
-            onClick={() => window.location.reload(false)}
+            action={() => window.location.reload(false)}
           >
             Read them again
           </Button>
@@ -43,20 +44,26 @@ const MessageContainer = () => {
           <>
             {messageCount === 0 ? null : (
               <Button
+                ariaLabel={`Show message ${messageCount} of ${numberOfMessages}.`}
                 variant="outline"
-                onClick={showPreviousMessage}
+                action={showPreviousMessage}
                 marginRight={2}
               >
                 Previous
               </Button>
             )}
-            <Button onClick={showNextMessage} marginLeft={2}>
+            <Button
+              ariaLabel={`Show message ${messageCount +
+                2} of ${numberOfMessages}.`}
+              action={showNextMessage}
+              marginLeft={2}
+            >
               Next
             </Button>
           </>
         )}
       </Flex>
-    </Box>
+    </main>
   );
 };
 

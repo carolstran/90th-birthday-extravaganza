@@ -3,7 +3,8 @@ import { Button as BaseButton } from "@chakra-ui/core";
 
 type ButtonProps = {
   children: React.ReactNode;
-  onClick: () => void;
+  ariaLabel: string;
+  action: () => void;
   element?: "a" | "button";
   marginLeft?: number;
   marginRight?: number;
@@ -12,19 +13,23 @@ type ButtonProps = {
 
 const Button = ({
   element = "a",
+  ariaLabel,
   variant,
   marginLeft,
   marginRight,
-  onClick,
+  action,
   children
 }: ButtonProps) => (
   <BaseButton
     as={element}
+    aria-label={ariaLabel}
     variantColor="red"
     variant={variant}
     mr={marginRight}
     ml={marginLeft}
-    onClick={onClick}
+    onClick={action}
+    onKeyPress={action}
+    tabIndex={0}
   >
     {children}
   </BaseButton>
