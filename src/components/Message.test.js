@@ -4,12 +4,14 @@ import Message from "./Message";
 import { ThemeProvider } from "@chakra-ui/core";
 import "@testing-library/jest-dom";
 
-it("renders initial Message", () => {
-  const component = render(
-    <ThemeProvider>
-      <Message />
-    </ThemeProvider>
-  );
-  const test = component.getByText("Email Don:")
-  expect(test).toBeVisible();
+describe("Message", () => {
+  it("renders the component", () => {
+    const component = render(
+      <ThemeProvider>
+        <Message />
+      </ThemeProvider>
+    );
+    const emailEmojiForMessage = component.getByRole("img");
+    expect(emailEmojiForMessage).toBeVisible();
+  });
 });
