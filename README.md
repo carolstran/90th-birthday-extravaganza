@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 90th Birthday Extravaganza 👴🏻
 
-## Available Scripts
+A little website that shows birthday messages from all around the globe to my Grandpa. He turned 90 earlier this month!
 
-In the project directory, you can run:
+![Screenshot of the main page. You see a banner with the number of messages, the message content, a contact email and a Next button.](https://user-images.githubusercontent.com/26869552/91357474-8ef86700-e7f1-11ea-8ce9-3f14ce3bdfb5.png)
 
-### `yarn start`
+## What's in this README
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Instructions for running locally](#instructions-for-running-locally)
+- [Key features](#key-features)
+- [What it's built with](#what-its-built-with)
+- [Known (but requested) issues](#known-but-requested-issues)
+- [Future improvements](#future-improvements)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Instructions for running locally
 
-### `yarn test`
+To run this website locally, you first need to clone the project and move into it from your terminal:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone git@github.com:carolstran/90th-birthday-extravaganza.git
+cd 90th-birthday-extravaganza
+```
 
-### `yarn build`
+Next, install the dependencies:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+> Note: I'm using [Yarn](https://yarnpkg.com/) as my primary package manager but you could also use [NPM](https://www.npmjs.com/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then execute the following command to launch the survey:
 
-### `yarn eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Finally, if you visit `localhost:3000` - you should be able to see the birthday messages 🎊
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Key features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Ability for my Grandpa to navigate between messages.
+- Counter to show what message he's on and how many there are total.
+- Email of the sender is displayed so he can get in touch and say thank you.
+- The entire experience ([with one exception](#known-but-requested-issues)) is WCAG 2.0 Level AA accessible.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## What it's built with
 
-## Learn More
+- [Create React App with TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+- State management with [React Hooks](https://reactjs.org/docs/hooks-reference.html) and the [Context API](https://reactjs.org/docs/context.html)
+- [Chakra-UI](https://chakra-ui.com/) design system with the default theme
+- [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for testing components
+- [canvas confetti](https://github.com/catdad/canvas-confetti) for a little flare 🎉
+- Deployed with [Netlify](https://www.netlify.com/) ([see the live site](https://happy-90th.netlify.app/))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Known (but requested) issues
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Red color used for buttons doesn't meet Level AA contrast requirements (but my Grandpa chose it).
+- There's no local storage implemented - so if you leave the page and come back, you'll start from the first message again. Apparently this is how he wanted it 🤷🏼‍♀️
 
-### Code Splitting
+## Future improvements
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+_Testing:_
 
-### Analyzing the Bundle Size
+- [ ] Add more test cases, particularly that address state changes.
+- [ ] Refactor testing setup so you don't need to import `@testing-library/jest-dom` into every file or wrap every component instance in `ThemeProvider`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+_Accessibility:_
 
-### Making a Progressive Web App
+- [ ] Disable confetti when reduced motion preferences are set.
+- [ ] Improve screen reader experience, including potentially changing the `Heading` elements in the `Message` component to `Text`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+_Data:_
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [ ] Anonymize data in the `birthdayMessages.js` file or hide completely.
+- [ ] Use the Wix API to automatically fetch any new messages and add them to the beginning of the `birthdayMessages` array.
+- [ ] Add a `New` badge to new messages he hasn't seen yet.
