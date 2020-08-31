@@ -53,6 +53,8 @@ Finally, if you visit `localhost:3000` - you should be able to see the birthday 
 - [canvas confetti](https://github.com/catdad/canvas-confetti) for a little flare 🎉
 - Deployed with [Netlify](https://www.netlify.com/) ([see the live site](https://happy-90th.netlify.app/))
 
+_**Yes, it's over-engineered but I needed something to show in interviews 😆**_
+
 ## Known (but requested) issues
 
 - Red color used for buttons doesn't meet Level AA contrast requirements (but my Grandpa chose it).
