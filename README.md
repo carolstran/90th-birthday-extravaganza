@@ -42,11 +42,14 @@ Finally, if you visit `localhost:3000` - you should be able to see the birthday 
 - Ability for my Grandpa to navigate between messages.
 - Counter to show what message he's on and how many there are total.
 - Email of the sender is displayed so he can get in touch and say thank you.
+- Video page with a recording of his birthday Zoom call with our family.
+- A top-level navigation to go between messages and the video.
 - The entire experience ([with one exception](#known-but-requested-issues)) is WCAG 2.0 Level AA accessible.
 
 ## What it's built with
 
 - [Create React App with TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+- [Reach router](https://reach.tech/router/)
 - State management with [React Hooks](https://reactjs.org/docs/hooks-reference.html) and the [Context API](https://reactjs.org/docs/context.html)
 - [Chakra-UI](https://chakra-ui.com/) design system with the default theme
 - [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for testing components
@@ -61,6 +64,11 @@ _**Yes, it's over-engineered but I needed something to show in interviews 😆**
 - There's no local storage implemented - so if you leave the page and come back, you'll start from the first message again. Apparently this is how he wanted it 🤷🏼‍♀️
 
 ## Future improvements
+
+_Code quality:_
+
+- [ ] General clean up after adding the video page.
+- [ ] Update and add new tests.
 
 _Testing:_
 

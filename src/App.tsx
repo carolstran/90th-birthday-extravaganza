@@ -1,18 +1,18 @@
 import React from "react";
-import { Box, Heading } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/core";
 import MessageContainer from "./components/MessageContainer";
+import VideoContainer from "./components/VideoContainer";
+import Nav from "./components/Nav";
+import { Router } from "@reach/router";
 
 const App = () => (
   <Box className="App">
-    <Box as="header">
-      <Heading as="h1" size="xl" textAlign="center" mt={12} mb={12}>
-        Birthday Wishes From Around the Globe <br />
-        <span role="img" aria-label="Celebration emojis">
-          🌎 🎈 🍰 ❤️ 🍾 🌍
-        </span>
-      </Heading>
-    </Box>
-    <MessageContainer />
+    <Nav />
+
+    <Router>
+      <MessageContainer path="/" />
+      <VideoContainer path="/video" />
+    </Router>
   </Box>
 );
 
