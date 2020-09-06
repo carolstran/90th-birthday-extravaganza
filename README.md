@@ -82,7 +82,7 @@ _Accessibility:_
 
 - [ ] Disable confetti when reduced motion preferences are set.
 - [ ] Improve screen reader experience, including potentially changing the `Heading` elements in the `Message` component to `Text`.
-- [ ] Improve spacing on mobile navigation.
+- [x] Improve spacing on mobile navigation.
 
 _Data:_
 

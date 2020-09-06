@@ -18,6 +18,7 @@ const NavLink = (props: NavLinkProps) => {
       color="red.800"
       variant="link"
       fontWeight={600}
+      mb={[3, 2, 0]}
       data-testid="navigation-link"
     >
       {children.toUpperCase()}
