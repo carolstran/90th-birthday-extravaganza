@@ -8,29 +8,31 @@ import "@testing-library/jest-dom";
 describe("Messages", () => {
   afterEach(cleanup);
 
-  it("renders the container, including child components", () => {
-    const component = render(
+  it("renders the page, including child pages", () => {
+    const page = render(
       <ThemeProvider>
         <Messages />
       </ThemeProvider>
     );
-    const emojiWithinContainer = component.getByRole("img");
-    expect(emojiWithinContainer).toBeVisible();
+    const messagesHeading = page.getByText(
+      "Birthday Wishes From Around the Globe"
+    );
+    expect(messagesHeading).toBeVisible();
   });
 
   // Skipping because of the TypeError with canvas-confetti
   xit("shows next message after button click", () => {
-    const component = render(
+    const page = render(
       <WishesContextProvider>
         <ThemeProvider>
           <Messages />
         </ThemeProvider>
       </WishesContextProvider>
     );
-    const nextButton = component.getByText("Next");
+    const nextButton = page.getByText("Next");
     fireEvent.click(nextButton);
 
-    const messageStatus = component.getByRole("status");
+    const messageStatus = page.getByRole("status");
     expect(messageStatus.textContent).toMatch("Message 2");
   });
 });

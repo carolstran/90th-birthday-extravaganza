@@ -5,13 +5,13 @@ import { ThemeProvider } from "@chakra-ui/core";
 import "@testing-library/jest-dom";
 
 describe("ZoomRecording", () => {
-  it("renders the container, including the video element", () => {
-    const component = render(
+  it("renders the page, including the video element", () => {
+    const page = render(
       <ThemeProvider>
         <ZoomRecording />
       </ThemeProvider>
     );
-    const zoomRecording = component.getByTitle(
+    const zoomRecording = page.getByTitle(
       "Recording from the family Zoom chat"
     );
     expect(zoomRecording).toBeVisible();

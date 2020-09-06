@@ -42,8 +42,9 @@ Finally, if you visit `localhost:3000` - you should be able to see the birthday 
 - Ability for my Grandpa to navigate between messages.
 - Counter to show what message he's on and how many there are total.
 - Email of the sender is displayed so he can get in touch and say thank you.
-- Video page with a recording of his birthday Zoom call with our family.
-- Top-level navigation to go between messages and the video.
+- Page with a recording of his birthday Zoom call with our family.
+- Page with video messages that were sent in by family members.
+- Top-level navigation to go between these pages.
 - The entire experience ([with one exception](#known-but-requested-issues)) is WCAG 2.0 Level AA accessible.
 
 ## What it's built with
@@ -67,8 +68,8 @@ _**Yes, it's over-engineered but I needed something to show in interviews 😆**
 
 _Code quality:_
 
-- [ ] General clean up after adding the video page.
-- [ ] Responsive video size for the Zoom recording.
+- [x] General clean up after adding the video page.
+- [ ] Responsive video size.
 - [ ] Move `confetti` function out of context.
 
 _Testing:_
@@ -81,6 +82,7 @@ _Accessibility:_
 
 - [ ] Disable confetti when reduced motion preferences are set.
 - [ ] Improve screen reader experience, including potentially changing the `Heading` elements in the `Message` component to `Text`.
+- [ ] Improve spacing on mobile navigation.
 
 _Data:_
 

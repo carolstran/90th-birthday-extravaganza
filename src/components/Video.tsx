@@ -10,7 +10,7 @@ const Video = (props: VideoProps) => {
   const { embedLink, title } = props;
 
   return (
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" mb={8} data-testid="video-container">
       <iframe
         width="560"
         height="315"

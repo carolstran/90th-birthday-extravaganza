@@ -13,6 +13,7 @@ const Navigation = () => (
     bg="gray.50"
   >
     <NavLink path="/">Read Messages</NavLink>
+    <NavLink path="/videos">Watch Family Videos</NavLink>
     <NavLink path="/zoom">Watch Zoom Recording</NavLink>
   </Flex>
 );
