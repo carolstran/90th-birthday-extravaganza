@@ -2,12 +2,12 @@ import React from "react";
 import { Box } from "@chakra-ui/core";
 import MessageContainer from "./components/MessageContainer";
 import VideoContainer from "./components/VideoContainer";
-import Nav from "./components/Nav";
+import Navigation from "./components/Navigation";
 import { Router } from "@reach/router";
 
 const App = () => (
   <Box className="App">
-    <Nav />
+    <Navigation />
 
     <Router>
       <MessageContainer path="/" />

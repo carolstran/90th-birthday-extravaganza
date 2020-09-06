@@ -43,7 +43,7 @@ Finally, if you visit `localhost:3000` - you should be able to see the birthday 
 - Counter to show what message he's on and how many there are total.
 - Email of the sender is displayed so he can get in touch and say thank you.
 - Video page with a recording of his birthday Zoom call with our family.
-- A top-level navigation to go between messages and the video.
+- Top-level navigation to go between messages and the video.
 - The entire experience ([with one exception](#known-but-requested-issues)) is WCAG 2.0 Level AA accessible.
 
 ## What it's built with
