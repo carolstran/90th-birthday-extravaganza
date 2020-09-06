@@ -68,12 +68,14 @@ _**Yes, it's over-engineered but I needed something to show in interviews 😆**
 _Code quality:_
 
 - [ ] General clean up after adding the video page.
-- [ ] Update and add new tests.
+- [ ] Responsive video size for the Zoom recording.
+- [ ] Move `confetti` function out of context.
 
 _Testing:_
 
 - [ ] Add more test cases, particularly that address state changes.
 - [ ] Refactor testing setup so you don't need to import `@testing-library/jest-dom` into every file or wrap every component instance in `ThemeProvider`.
+- [x] Update and add new tests for new video-related components.
 
 _Accessibility:_
 

@@ -24,11 +24,9 @@ describe("Button", () => {
 
     const component = render(
       <ThemeProvider>
-        <Button
-          children="Next"
-          ariaLabel="Example of a next button"
-          action={fn}
-        />
+        <Button ariaLabel="Example of a next button" action={fn}>
+          Next
+        </Button>
       </ThemeProvider>
     );
 
