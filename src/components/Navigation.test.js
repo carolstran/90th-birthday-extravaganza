@@ -12,6 +12,6 @@ describe("Navigation", () => {
       </ThemeProvider>
     );
     const navLinks = component.getAllByTestId("navigation-link");
-    expect(navLinks.length).toBe(3);
+    expect(navLinks.length).toEqual(3);
   });
 });

@@ -22,6 +22,6 @@ describe("Videos", () => {
       </ThemeProvider>
     );
     const videos = page.getAllByTestId("video-container");
-    expect(videos.length).toBe(2);
+    expect(videos.length).toEqual(2);
   });
 });
