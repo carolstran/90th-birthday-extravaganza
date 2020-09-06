@@ -30,6 +30,7 @@ const Button = ({
     onClick={action}
     onKeyPress={action}
     tabIndex={0}
+    data-testid="styled-button"
   >
     {children}
   </BaseButton>

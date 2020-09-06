@@ -77,6 +77,7 @@ _Testing:_
 - [ ] Add more test cases, particularly that address state changes.
 - [ ] Refactor testing setup so you don't need to import `@testing-library/jest-dom` into every file or wrap every component instance in `ThemeProvider`.
 - [x] Update and add new tests for new video-related components.
+- [ ] Fix TypeError that occurs when testing elements using canvas-confetti.
 
 _Accessibility:_
 
