@@ -47,7 +47,7 @@ describe("App", () => {
       "Birthday Wishes From Around the Globe"
     );
 
-    await navigate("/video");
-    expect(container.innerHTML).toMatch(`Video Recording From The "Party"`);
+    await navigate("/zoom");
+    expect(container.innerHTML).toMatch(`Zoom Recording From The "Party"`);
   });
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/core";
-import MessageContainer from "./components/MessageContainer";
-import VideoContainer from "./components/VideoContainer";
+import Messages from "./pages/Messages";
+import ZoomRecording from "./pages/ZoomRecording";
 import Navigation from "./components/Navigation";
 import { Router } from "@reach/router";
 
@@ -10,8 +10,8 @@ const App = () => (
     <Navigation />
 
     <Router>
-      <MessageContainer path="/" />
-      <VideoContainer path="/video" />
+      <Messages path="/" />
+      <ZoomRecording path="/zoom" />
     </Router>
   </Box>
 );

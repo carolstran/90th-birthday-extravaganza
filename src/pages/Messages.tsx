@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import Message from "./Message";
-import MessageCount from "./MessageCount";
-import Button from "./Button";
+import Message from "../components/Message";
+import MessageCount from "../components/MessageCount";
+import Button from "../components/Button";
 import { Box, Flex } from "@chakra-ui/core";
 import { WishesContext } from "../context/WishesContext";
 import { StoreType } from "../types";
 import { RouteComponentProps } from "@reach/router";
-import Header from "./Header";
+import Header from "../components/Header";
 
-const MessageContainer = (props: RouteComponentProps) => {
+const Messages = (props: RouteComponentProps) => {
   const {
     currentWish: { messageCount, numberOfMessages },
     showPreviousMessage,
@@ -75,4 +75,4 @@ const MessageContainer = (props: RouteComponentProps) => {
   );
 };
 
-export default MessageContainer;
+export default Messages;

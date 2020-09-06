@@ -1,17 +1,17 @@
 import React from "react";
 import { cleanup, render, fireEvent } from "@testing-library/react";
-import MessageContainer from "./MessageContainer";
+import Messages from "./Messages";
 import WishesContextProvider from "../context/WishesContext";
 import { ThemeProvider } from "@chakra-ui/core";
 import "@testing-library/jest-dom";
 
-describe("MessageContainer", () => {
+describe("Messages", () => {
   afterEach(cleanup);
 
   it("renders the container, including child components", () => {
     const component = render(
       <ThemeProvider>
-        <MessageContainer />
+        <Messages />
       </ThemeProvider>
     );
     const emojiWithinContainer = component.getByRole("img");
@@ -23,7 +23,7 @@ describe("MessageContainer", () => {
     const component = render(
       <WishesContextProvider>
         <ThemeProvider>
-          <MessageContainer />
+          <Messages />
         </ThemeProvider>
       </WishesContextProvider>
     );

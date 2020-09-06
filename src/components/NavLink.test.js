@@ -8,7 +8,7 @@ describe("NavLink", () => {
   it("renders the link with uppercase letters", () => {
     const component = render(
       <ThemeProvider>
-        <NavLink path="/video">Example video link</NavLink>
+        <NavLink path="/zoom">Example video link</NavLink>
       </ThemeProvider>
     );
     const formattedVideoLinkText = component.getByText("EXAMPLE VIDEO LINK");
