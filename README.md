@@ -2,7 +2,7 @@
 
 A little website that shows birthday messages from all around the globe to my Grandpa. He turned 90 earlier this month!
 
-![Screenshot of the main page. You see a banner with the number of messages, the message content, a contact email and a Next button.](https://user-images.githubusercontent.com/26869552/91357474-8ef86700-e7f1-11ea-8ce9-3f14ce3bdfb5.png)
+![Screenshot of the main page. Below the top-level navigation, you see a banner with the number of messages, the message content and a contact email. Underneath that is a Previous and Next button.](https://user-images.githubusercontent.com/26869552/92330534-c677d680-f06f-11ea-97dc-71e7ccf38d5f.png)
 
 ## What's in this README
 
@@ -89,3 +89,5 @@ _Data:_
 - [ ] Anonymize data in the `birthdayMessages.js` file or hide completely.
 - [ ] Use the Wix API to automatically fetch any new messages and add them to the beginning of the `birthdayMessages` array.
 - [ ] Add a `New` badge to new messages he hasn't seen yet.
+- [x] Disable search engine indexing.
+- [ ] Make the site password protected.
