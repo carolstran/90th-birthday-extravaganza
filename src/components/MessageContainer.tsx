@@ -16,6 +16,10 @@ const MessageContainer = (props: RouteComponentProps) => {
     lastMessage
   }: StoreType = useContext(WishesContext);
 
+  const generateAriaLabel = (messageCountForLabel: number) => {
+    return `Show message ${messageCountForLabel} of ${numberOfMessages}.`;
+  };
+
   return (
     <>
       <Header>Birthday Wishes From Around the Globe</Header>
@@ -48,7 +52,7 @@ const MessageContainer = (props: RouteComponentProps) => {
             <>
               {messageCount === 0 ? null : (
                 <Button
-                  ariaLabel={`Show message ${messageCount} of ${numberOfMessages}.`}
+                  ariaLabel={generateAriaLabel(messageCount)}
                   variant="outline"
                   action={showPreviousMessage}
                   marginRight={2}
@@ -57,8 +61,7 @@ const MessageContainer = (props: RouteComponentProps) => {
                 </Button>
               )}
               <Button
-                ariaLabel={`Show message ${messageCount +
-                  2} of ${numberOfMessages}.`}
+                ariaLabel={generateAriaLabel(messageCount + 2)}
                 action={showNextMessage}
                 marginLeft={2}
               >
