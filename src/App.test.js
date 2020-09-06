@@ -1,19 +1,53 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { cleanup, render, fireEvent } from "@testing-library/react";
+import {
+  createHistory,
+  createMemorySource,
+  LocationProvider
+} from "@reach/router";
 import App from "./App";
 import { ThemeProvider } from "@chakra-ui/core";
 import "@testing-library/jest-dom";
 
 describe("App", () => {
-  it("renders without crashing", () => {
+  afterEach(cleanup);
+
+  function renderWithRouter(
+    ui,
+    { route = "/", history = createHistory(createMemorySource(route)) } = {}
+  ) {
+    return {
+      ...render(<LocationProvider history={history}>{ui}</LocationProvider>),
+      history
+    };
+  }
+
+  it("renders index route without crashing", () => {
     const component = render(
       <ThemeProvider>
         <App />
       </ThemeProvider>
     );
-    const appHeader = component.getByText(
+    const indexHeading = component.getByText(
       "Birthday Wishes From Around the Globe"
     );
-    expect(appHeader).toBeVisible();
+    expect(indexHeading).toBeVisible();
+  });
+
+  it("navigates to the correct routes", async () => {
+    const {
+      container,
+      history: { navigate }
+    } = renderWithRouter(
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    );
+    expect(container.innerHTML).toMatch(
+      "Birthday Wishes From Around the Globe"
+    );
+
+    await navigate("/video");
+    expect(container.innerHTML).toMatch(`Video Recording From The "Party"`);
   });
 });
