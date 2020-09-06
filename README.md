@@ -68,7 +68,7 @@ _**Yes, it's over-engineered but I needed something to show in interviews 😆**
 
 _Code quality:_
 
-- [x] General clean up after adding the video page.
+- [x] General clean up after adding the video page ([e10246e](https://github.com/carolstran/90th-birthday-extravaganza/commit/e10246e5e5aba5fff01c55c133db1067a4150f47)).
 - [ ] Responsive video size.
 - [ ] Move `confetti` function out of context.
 
@@ -76,19 +76,19 @@ _Testing:_
 
 - [ ] Add more test cases, particularly that address state changes.
 - [ ] Refactor testing setup so you don't need to import `@testing-library/jest-dom` into every file or wrap every component instance in `ThemeProvider`.
-- [x] Update and add new tests for new video-related components.
+- [x] Update and add new tests for new video-related components ([d0a01e0](https://github.com/carolstran/90th-birthday-extravaganza/commit/d0a01e01d1dcc7c89ce09d955f0dac0427caaeda))
 - [ ] Fix TypeError that occurs when testing elements using canvas-confetti.
 
 _Accessibility:_
 
 - [ ] Disable confetti when reduced motion preferences are set.
 - [ ] Improve screen reader experience, including potentially changing the `Heading` elements in the `Message` component to `Text`.
-- [x] Improve spacing on mobile navigation.
+- [x] Improve spacing on mobile navigation ([64d295d](https://github.com/carolstran/90th-birthday-extravaganza/commit/64d295dc8496fec9dbc54a1f4f3988d71b99ec54)).
 
 _Data:_
 
 - [ ] Anonymize data in the `birthdayMessages.js` file or hide completely.
 - [ ] Use the Wix API to automatically fetch any new messages and add them to the beginning of the `birthdayMessages` array.
 - [ ] Add a `New` badge to new messages he hasn't seen yet.
-- [x] Disable search engine indexing.
+- [x] Disable search engine indexing ([e5dd92e](https://github.com/carolstran/90th-birthday-extravaganza/commit/e5dd92e84ef2f6076e90d0cacd29fbcb189051ae)).
 - [ ] Make the site password protected.
