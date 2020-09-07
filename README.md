@@ -72,6 +72,7 @@ _Code quality:_
 - [x] General clean up after adding the video page ([`e10246e`](https://github.com/carolstran/90th-birthday-extravaganza/commit/e10246e5e5aba5fff01c55c133db1067a4150f47)).
 - [ ] Responsive video size.
 - [ ] Move `confetti` function out of context.
+- [ ] Bug: Names as part of a list show a comma in the email section (ie. "Email Mike,:").
 
 _Testing:_
 
