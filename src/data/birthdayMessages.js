@@ -1,5 +1,40 @@
 const birthdayMessages = [
   {
+    message: "We enjoyed looking at your 90 year pictorial. \n\n Looks like you hit this thing called life right out of the park! \n\n Absolutely enjoy and celebrate this milestone day.  Can't wait to see you and your family again. \n\n Love smiles and toast.",
+    name: "Lisa and Mike Tracy",
+    email: "lisa.tracy4@gmail.com"
+  },
+  {
+    message: "Greetings from Vernon British Columbia! Congratulations on your 90th birthday. Sadly we will not be able to see you in Sun Village this year. Howard will miss the golf and we will both miss the wonderful folks (like you and Carol) that we have met along the way. \n\n Best wishes and we do hope that we will be able to see you sometime in the future. \n\n Thinking of you on this special day.",
+    name: "Howard Ross and Judy Hershman",
+    email: "playsystems3@gmail.com"
+  },
+  {
+    message: "I understand it is your birthday Joe, trust you and your family have a special time, it is my grandchild’s birthday today as well. \n\n Take care, have a fun and a memorable day with your family. \n\n Love you both.",
+    name: "Donnie (Donalda) Karpiuk",
+    email: "wdkarpiuk@gmail.com"
+  },
+  {
+    message: "We wanted to send our birthday wishes to you, Joe. 🎂 It is indeed a day to be the star of the show and celebrate you !! Hope it was full of all good things and many cherished memories. \n\n Happy Birthday and many more happy returns!",
+    name: "Val & Jeff Bergeman (Ethan's mom 😀 )",
+    email: "vkberge@gmail.com"
+  },
+  {
+    message: "Hi, you big wiener, \n\n A short but sweet note to offer belated 90th birthday wishes and congratulations on being 90 years young, hope it was a great day. I know Wolfie would have been there under normal circumstances and (if invited!) I would have been delighted to be there too…. however, I’m sure we’ll get to see you before your 100th! \n\n Take care, please give Carol our love, catch up soon, I hope.",
+    name: "Marc Baker",
+    email: "marc@visionassociates.co.uk"
+  },
+  {
+    message: "Just wanted to wish you the happiest of birthdays. Not much is happening around here. We have been able to do a few things despite the co vid thing going. Going to the lake and enjoying the grandkids.  JP is just finishing up 2nd crop hay but most of the land he rents out to other farmers. Only have a few cows just enough for butchering and pay a few bills.  The summer here was pretty hot with lots of rain.  We have a garden that is keeping us busy now. \n\n Hope you had a great birthday and celebration.  Jill did a great job on the website, we especially enjoyed looking at the old pictures of the farm and everyone. I don’t think our girls ever saw a picture of the farm house. \n\n  If you ever get out to Wisconsin please stop by or come stay at the lake.  Love and God bless on your birthday and give our love to everyone.",
+    name: "JP and Becky Tracy family",
+    email: "jptjr@centurytel.net"
+  },
+  {
+    message: "Happy Birthday even if it is a little belated. Mike Mcd said he was going to send out an email, but then I didn’t get it until I looked in my junk mail box. Lo and Behold - no, not the second coming but the email with your address so I could write you. I hope you had a good birthday. Now for sure you can call yourself BIG and OLD. It’s quite an accomplishment. Lots of years, lots of memories, lots of people who have known you. And quite a life. Congratulations on all the folks you known, the family you have raised, the houses you have chain sawed, er remodeled. Some story.\n\n Take care of yourself, Big.",
+    name: "Cole Mason",
+    email: "cvmason@comcast.net"
+  },
+  {
     message:
       "Happy Birthday, Joe. 90 years young. Amazing! But we know you had help getting there.",
     name: "Don & Marlys Overlie",
