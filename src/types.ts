@@ -1,7 +1,7 @@
 export type CurrentWish = {
   message: string;
   name: string;
-  email: string;
+  email?: string;
   messageCount: number;
   numberOfMessages: number;
 };

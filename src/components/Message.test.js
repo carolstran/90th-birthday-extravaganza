@@ -11,7 +11,7 @@ describe("Message", () => {
         <Message />
       </ThemeProvider>
     );
-    const emailEmojiForMessage = component.getByRole("img");
-    expect(emailEmojiForMessage).toBeVisible();
+    const initialMessage = component.getByTestId("first-message");
+    expect(initialMessage.textContent).toMatch("Happy Birthday");
   });
 });

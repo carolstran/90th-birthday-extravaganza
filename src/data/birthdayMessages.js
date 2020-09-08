@@ -1,5 +1,33 @@
 const birthdayMessages = [
   {
+    message: "Happy Birthday Joe!",
+    name: "Brad and Holly Finer"
+  },
+  {
+    message: "Hey hey BIG JOE.  Looks like you have a SPECIAL DAY TODAY.  So from your woodshop buddy from Escanaba Michigan Monica and I send you HAPPY BIRTHDAY WISHES and may God BLESS YOU IN A VERY SPECIAL WAY AS WELL.",
+    name: "Robert Mortel"
+  },
+  {
+    message: "Happy Birthday, Joe!",
+    name: "Kevin and Mary Herzog, Owatonna Marian HS"
+  },
+  {
+    message: "Happy Birthday Joe.  Hope you're having a wonderful day!",
+    name: "Kim Ahlgren Logsdon"
+  },
+  {
+    message: "Happy Birthday Cousin Joe!  May you have a fantastic day!  Hope to see you again sometime soon.  Love you.",
+    name: "JoAnn tracy Polomis, Wausaukee WI"
+  },
+  {
+    message: "Happy Birthday Joe!",
+    name: "Sarah Tacheny (Sarah Torgerson Owatonna, class of 1976)"
+  },
+  {
+    message: "Happy birthday - sending my greetings to you and to the whole family!",
+    name: "Maria Barathe (previously Marika Hunova, exchange student from Bratislava)"
+  },
+  {
     message: "We enjoyed looking at your 90 year pictorial. \n\n Looks like you hit this thing called life right out of the park! \n\n Absolutely enjoy and celebrate this milestone day.  Can't wait to see you and your family again. \n\n Love smiles and toast.",
     name: "Lisa and Mike Tracy",
     email: "lisa.tracy4@gmail.com"

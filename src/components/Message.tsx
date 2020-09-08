@@ -19,13 +19,14 @@ const Message = () => {
         mt={2}
         mb={6}
         lineHeight={1.5}
+        data-testid="first-message"
       >
         {message}
       </Heading>
       <Heading as="h3" size="md" fontWeight={700} textAlign="center" mb={12}>
         - {name}
       </Heading>
-      <Text textAlign="center" mb={18}>
+      {email ? <Text textAlign="center" mb={18}>
         <span role="img" aria-label="Love letter emoji">
           💌
         </span>{" "}
@@ -33,7 +34,7 @@ const Message = () => {
         <Link href={`mailto:${email}?subject=Thanks for the birthday wishes!`}>
           {email}
         </Link>
-      </Text>
+      </Text> : null}
     </>
   );
 };
